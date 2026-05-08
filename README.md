@@ -1,62 +1,123 @@
 # Walmart Sales Forecast Dashboard
 
-Time Series Forecasting project using Python, SQL, PostgreSQL and Power BI.
+Time series forecasting project using Python, SQL, PostgreSQL and Power BI.
 
 ---
 
 ## Project Overview
 
-This project analyzes Walmart historical sales data and builds a forecasting dashboard using:
+This project analyzes Walmart sales data and builds a forecasting dashboard to compare historical sales with predicted sales trends.
 
-- Python
-- Prophet
-- PostgreSQL
-- SQL
-- Power BI
+The workflow includes:
 
-The dashboard provides insights into:
-
-- Historical vs Forecast Sales
-- Top Performing Stores
-- Holiday Impact on Sales
-- Temperature vs Sales Relationship
-- Retail Forecasting Trends
+- Data cleaning with Python
+- Sales forecasting using Prophet
+- SQL/PostgreSQL analysis
+- Interactive dashboard development in Power BI
 
 ---
 
 ## Tools & Technologies
 
-- Python (Pandas, Prophet)
+- Python
+- Pandas
+- Prophet
 - PostgreSQL
 - SQL
 - Power BI
-- VS Code
+- GitHub
+
+---
+
+## Dashboard Features
+
+- Historical Sales vs Forecast comparison
+- Top performing stores
+- Temperature impact on sales
+- Holiday sales impact
+- Interactive filters by:
+  - Date
+  - Store
+  - Holiday flag
 
 ---
 
 ## Dashboard Preview
 
-![Dashboard](images/dashboard.png)
+![Dashboard Preview](images/dashboard.png)
 
 ---
 
-## Key Insights
+## Project Structure
 
-- Sales remain relatively stable throughout the year.
-- Holiday periods generate significant sales spikes.
-- A small group of stores contributes disproportionately to total sales.
-- Temperature shows weak correlation with sales.
-- Prophet forecasting captures seasonality and overall trends.
+```bash
+walmart-sales-forecast/
+│
+├── data/
+├── notebooks/
+├── powerbi/
+├── sql/
+├── images/
+├── README.md
+└── requirements.txt
+```
 
 ---
 
-## Forecasting Process
+## Forecasting Model
 
-1. Data cleaning with Pandas
-2. Time series aggregation
-3. Forecasting using Prophet
-4. Export forecast results to CSV
-5. SQL analysis in PostgreSQL
+The forecasting model was built using Facebook Prophet for time series prediction.
+
+The model predicts future Walmart sales trends based on historical weekly sales data.
+
+---
+
+## How to Run
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/ValeriaVillegas/walmart-sales-forecast.git
+```
+
+### 2. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the notebook
+
+Open the notebook inside the `notebooks/` folder.
+
+### 4. Open Power BI Dashboard
+
+Open the `.pbix` file located inside the `powerbi/` folder.
+
+---
+
+## Dashboard Insights
+
+### Historical Sales vs Forecast
+Compares real Walmart weekly sales against forecasted sales values over time.
+
+### Top Stores by Sales
+Shows the stores with the highest sales performance.
+
+### Temperature Impact on Sales
+Analyzes the relationship between temperature and weekly sales.
+
+### Holiday Sales Impact
+Compares sales behavior during holiday and non-holiday periods.
+
+---
+
+## Future Improvements
+
+- Add advanced forecasting models
+- Include anomaly detection
+- Deploy dashboard online
+- Add automated ETL pipeline
 
 ---
 
@@ -64,5 +125,5 @@ The dashboard provides insights into:
 
 Valeria Villegas
 
-- GitHub: https://github.com/valeriavillegas
+- GitHub: https://github.com/ValeriaVillegas
 - LinkedIn: https://www.linkedin.com/in/valeria-villegas-ribon-businessintelligence/
