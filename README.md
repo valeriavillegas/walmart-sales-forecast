@@ -61,4 +61,8 @@ The dashboard provides insights into:
 ---
 
 ## Author
+
 Valeria Villegas
+
+- GitHub: https://github.com/valeriavillegas
+- LinkedIn: https://www.linkedin.com/in/valeria-villegas-ribon-businessintelligence/
